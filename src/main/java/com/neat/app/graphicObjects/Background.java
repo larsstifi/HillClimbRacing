@@ -18,7 +18,7 @@ public class Background implements GraphicObjects{
 	public Background(GameWindow gameWindow) {
 		this.gameWindow = gameWindow;
 		try {
-			backgroundImage = ImageIO.read(new File("Background.jpg"));
+			backgroundImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Background.jpg"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

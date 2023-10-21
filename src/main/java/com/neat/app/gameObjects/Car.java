@@ -93,17 +93,17 @@ public class Car implements GameObject {
 
 		// load car image
 		try {
-			carImage = ImageIO.read(new File("Sportscar.png"));
+			carImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Sportscar.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		try {
-			wheelImage = ImageIO.read(new File("wheel.png"));
+			wheelImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream("wheel.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		try {
-			driverImage = ImageIO.read(new File("Classic-driver.png"));
+			driverImage = ImageIO.read(getClass().getClassLoader().getResourceAsStream("Classic-driver.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
