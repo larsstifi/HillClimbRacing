@@ -19,7 +19,7 @@ public class Background implements GraphicObjects{
 		this.gameWindow = gameWindow;
 		try {
 			backgroundImage = ImageIO.read(new File("Background.jpg"));
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
