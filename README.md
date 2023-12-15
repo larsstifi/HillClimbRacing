@@ -6,3 +6,8 @@ Agents learning to play Hill Climb Racing using Neural Evolution of Augmented To
 
 # Requirements 
 JDK, Maven
+
+# Build
+```
+mvn clean package
+```
