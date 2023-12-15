@@ -11,3 +11,8 @@ JDK, Maven
 ```
 mvn clean package
 ```
+
+# Run
+```
+java -jar ./target/HillClimbRacing-1.0.jar
+```
